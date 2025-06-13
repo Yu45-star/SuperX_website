@@ -5,7 +5,7 @@ layout: page
 show_sidebar: false
 hide_footer: false
 hero_height: is-large
-hero_image: img/tartanIMU/FirstPage.png
+hero_image: /img/tartanimu/firstpage.png
 mathjax: true
 ---
 
@@ -507,6 +507,135 @@ mathjax: true
             margin: 20px 0;
             border-left: 4px solid #3498db;
         }
+        
+        /* Existing styles ... */
+        
+        .pdf-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .pdf-container object {
+            border: none;
+            border-radius: 8px;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .pdf-container {
+                padding: 10px;
+            }
+            
+            .pdf-container object {
+                height: 600px;
+            }
+        }
+
+        /* Existing styles ... */
+        
+        .poster-section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .poster-container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .poster-viewer {
+            width: 100%;
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .poster-viewer object {
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: height 0.3s ease;
+        }
+        
+        .poster-controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        }
+        
+        .poster-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 8px;
+            background: #3498db;
+            color: white;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .poster-button:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+        }
+        
+        .poster-button i {
+            font-size: 1.1rem;
+        }
+        
+        .download-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 20px;
+            border-radius: 8px;
+            background: #e3f2fd;
+            transition: all 0.3s ease;
+        }
+        
+        .download-link:hover {
+            background: #bbdefb;
+            transform: translateY(-2px);
+        }
+        
+        @media screen and (max-width: 768px) {
+            .poster-section {
+                padding: 0 10px;
+            }
+            
+            .poster-viewer {
+                padding: 10px;
+            }
+            
+            .poster-controls {
+                flex-direction: column;
+                align-items: stretch;
+                padding: 15px;
+            }
+            
+            .poster-button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
     </style>
 </head>
 
@@ -530,6 +659,9 @@ mathjax: true
             <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Zhao_Tartan_IMU_A_Light_Foundation_Model_for_Inertial_Positioning_in_CVPR_2025_paper.pdf" class="button is-info">
                 <img src="/img/logos/arxiv.png" class="small-logo">Paper
             </a>
+            <a href="/img/tartanimu/CVPR_Poster.pdf" class="button is-info">
+                <img src="/img/logos/arxiv.png" class="small-logo">Poster
+            </a>
             <a href="https://github.com/superxslam/SuperOdom" class="button is-info">
                 <i class="fab fa-github" style="font-size:20px; margin-right: 8px;"></i>Code (Coming soon...)
             </a>
@@ -541,27 +673,139 @@ mathjax: true
 </body>
 </html>
 
-<div class="section-divider"></div>
-
-<!-- <h1 class="centered-title">Overview Video</h1>
-<div class="video-container">
-    <iframe src="https://www.youtube.com/embed/HqoDL2xiaZA" title="TartanIMU Overview Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- 
+<h1 class="centered-title">CVPR Poster</h1>
+<div class="poster-section">
+    <div class="poster-container">
+        <div class="poster-viewer">
+            <object
+                data="/img/tartanimu/CVPR_Poster.pdf"
+                type="application/pdf"
+                width="100%"
+                height="800px">
+                <p>It appears you don't have a PDF plugin for this browser. You can 
+                <a href="/img/tartanimu/CVPR_Poster.pdf" class="download-link">
+                    <i class="fas fa-download"></i> Download the PDF file
+                </a></p>
+            </object>
+        </div>
+        <div class="poster-controls">
+            <button class="poster-button" onclick="document.querySelector('.poster-viewer object').style.height='600px'">
+                <i class="fas fa-compress"></i> Compact View
+            </button>
+            <button class="poster-button" onclick="document.querySelector('.poster-viewer object').style.height='800px'">
+                <i class="fas fa-expand"></i> Full View
+            </button>
+            <a href="/img/tartanimu/CVPR_Poster.pdf" class="poster-button" download>
+                <i class="fas fa-download"></i> Download PDF
+            </a>
+        </div>
+    </div>
 </div> -->
 
-<h1 class="centered-title">CVPR Poster</h1>
-<div style="display: flex; justify-content: center;">
-  <div style="position: relative; width: 70%; padding-top: 35%; overflow: hidden;">
-    <iframe
-      src="/img/tartanIMU/CVPR%20Poster.pdf"
-      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
-      allowfullscreen>
-    </iframe>
-  </div>
-</div>
-
-
-
-
+<style>
+    /* Existing styles ... */
+    
+    .poster-section {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+    
+    .poster-container {
+        background: white;
+        border-radius: 16px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        overflow: hidden;
+        transition: all 0.3s ease;
+    }
+    
+    .poster-viewer {
+        width: 100%;
+        background: #f8f9fa;
+        padding: 20px;
+        border-bottom: 1px solid #e9ecef;
+    }
+    
+    .poster-viewer object {
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        transition: height 0.3s ease;
+    }
+    
+    .poster-controls {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px;
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    }
+    
+    .poster-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 8px;
+        background: #3498db;
+        color: white;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+    
+    .poster-button:hover {
+        background: #2980b9;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+    }
+    
+    .poster-button i {
+        font-size: 1.1rem;
+    }
+    
+    .download-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: #3498db;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 10px 20px;
+        border-radius: 8px;
+        background: #e3f2fd;
+        transition: all 0.3s ease;
+    }
+    
+    .download-link:hover {
+        background: #bbdefb;
+        transform: translateY(-2px);
+    }
+    
+    @media screen and (max-width: 768px) {
+        .poster-section {
+            padding: 0 10px;
+        }
+        
+        .poster-viewer {
+            padding: 10px;
+        }
+        
+        .poster-controls {
+            flex-direction: column;
+            align-items: stretch;
+            padding: 15px;
+        }
+        
+        .poster-button {
+            width: 100%;
+            justify-content: center;
+        }
+    }
+</style>
 
 <div class="section-divider"></div>
 
@@ -572,7 +816,7 @@ mathjax: true
     <p>Our approach consists of three stages: First, a pre-trained foundation model leverages over 100 hours of multi-platform data to establish general motion knowledge, achieving 36% improvement in ATE over specialized models. Second, to adapt to previously unseen tasks, we use Low-Rank Adaptation (LoRA), allowing positive transfer with only 1.1 M trainable parameters. Finally, to support robotics deployment, we introduce online test-time adaptation, which eliminates the boundary between training and testing, allowing the model to continuously "learn as it operates" at 200 FPS in real-time.</p>
     
     <div class="figure-container">
-        <img src="img/tartanIMU/FirstPage.png" alt="TartanIMU Overview" />
+        <img src="/img/tartanimu/firstpage.png" alt="TartanIMU Overview" />
     <p class="figure-description">
     Tartan IMU is to our knowledge the first open-source cross-robot foundation model for pose estimation using solely IMU data.
     </p>
@@ -584,7 +828,7 @@ mathjax: true
 <h1 class="centered-title">System Architecture</h1>
 <div class="system-architecture">
     <div class="image-container">
-        <img src="img/tartanIMU/SystemPipeline.PNG" alt="System architecture">
+        <img src="/img/tartanimu/systempipeline.png" alt="System architecture">
         <p class="image-caption">
             <strong>Figure 1: Three learning stages of TartanIMU.</strong> <strong>(a)</strong> Pretrained IMU Model features a shared backbone to capture generalizable IMU knowledge. <strong>(b)</strong> Efficient Fine-Tuning utilizes an adapter to enable positive transfer for new tasks. <strong>(c)</strong> Online Adaptation employs an adaptive memory buffer to support on-the-fly model updates during deployment.
         </p>
@@ -605,7 +849,7 @@ mathjax: true
             Our foundation model leverages a shared backbone architecture to capture generalizable IMU motion patterns across different robotic platforms. This stage establishes the core motion understanding that serves as the foundation for subsequent adaptation stages.
         </p>
         <div class="image-container">
-            <img src="img/tartanIMU/tsne_viz.PNG" alt="t-SNE visualization of learned features">
+            <img src="/img/tartanimu/tsne_viz.png" alt="t-SNE visualization of learned features">
             <p class="image-caption">t-SNE visualization of the learned ResNet feature space. Cluster separation across platforms shows the model's ability to learn motion-specific dynamics.</p>
         </div>
     </div>
@@ -630,14 +874,14 @@ mathjax: true
             Here, \(W_0\) is the pretrained weight, and \(A, B\) are the small matrices trained for the new task. This structure ensures that learning is efficient, allowing use even with very limited data.
         </p>
         <div class="image-container">
-            <img src="img/tartanIMU/Offline_Finetuning.png" alt="Offline finetuning results">
+            <img src="/img/tartanimu/offline_finetuning.png" alt="Offline finetuning results">
             <p class="image-caption">Our LoRA-based finetuning improves accuracy on new motion tasks while keeping computational and data costs low.</p>
         </div>
         <p>
             One of the key benefits of LoRA adaptation is <strong>non-forgetting</strong>: the core representation remains stable across tasks. This enables lifelong learning capabilities and is particularly useful in robotics where new environments and tasks are continuously encountered.
         </p>
         <div class="image-container">
-            <img src="img/tartanIMU/no_forgetting.png" alt="No forgetting comparison">
+            <img src="/img/tartanimu/no_forgetting.png" alt="No forgetting comparison">
             <p class="image-caption">Comparison of LoRA vs. full fine-tuning. LoRA retains prior knowledge, while full finetuning can degrade earlier performance.</p>
         </div>
     </div>
@@ -656,7 +900,7 @@ mathjax: true
             To support this, we maintain a lightweight, adaptive training buffer that stores recent IMU samples during deployment. These samples are filtered and clustered via a Gaussian Mixture Model (GMM) based motion classifier to ensure diversity across motion types—e.g., stationary, forward motion, left turns, and right turns. The buffer actively reselects samples to avoid redundancy, enabling quick and stable updates with minimal compute.
         </p>
         <div class="image-container">
-            <img src="img/tartanIMU/online_adaptation.png" alt="Online adaptation illustration">
+            <img src="/img/tartanimu/online_adaptation.png" alt="Online adaptation illustration">
             <p class="image-caption">
                 Online adaptation results in an 8-shaped trajectory using only IMU data. By maintaining a balanced buffer across diverse motion segments, TartanIMU adapts quickly during deployment, improving trajectory accuracy over time.
             </p>
@@ -664,7 +908,7 @@ mathjax: true
         <p>
         </p>
         <div class="image-container">
-            <img src="img/tartanIMU/online_adaptation_circle.png" alt="SLAM and IMU fallback mechanism">
+            <img src="/img/tartanimu/online_adaptation_circle.png" alt="SLAM and IMU fallback mechanism">
             <p class="image-caption">
                 Performance of Online Adaptation on Unseen Trajectory. The Tartan IMU model progressively learns unseen circular patterns through incremental training data. It can be seen that our model can learn new motion patterns within 90 seconds.
             </p>
@@ -683,8 +927,7 @@ mathjax: true
                 <div id="results-carousel" class="carousel">
                     <div class="item">
                         <video muted loop playsinline controls preload="metadata" poster="/img/tartanimu/car_overview.png">
-                            <source src="/video/tartanimu/exp1_video_compare_car.m4v" type="video/mp4">
-                            <source src="/video/tartanimu/exp1_video_compare_car.m4v" type="video/quicktime">
+                            <source src="video/tartanimu/exp1_video_compare_car.m4v" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <p class="item-description">UGV (Foundation Model)</p>
@@ -692,7 +935,6 @@ mathjax: true
                     <div class="item">
                         <video muted loop playsinline controls preload="metadata" poster="/img/tartanimu/dog_overview.png">
                             <source src="/video/tartanimu/exp1_video_compare_dog.m4v" type="video/mp4">
-                            <source src="/video/tartanimu/exp1_video_compare_dog.m4v" type="video/quicktime">
                             Your browser does not support the video tag.
                         </video>
                         <p class="item-description">Quadruped (Foundation Model)</p>
@@ -700,7 +942,6 @@ mathjax: true
                     <div class="item">
                         <video muted loop playsinline controls preload="metadata" poster="/img/tartanimu/drone_overview.png">
                             <source src="/video/tartanimu/exp1_video_compare_drone.m4v" type="video/mp4">
-                            <source src="/video/tartanimu/exp1_video_compare_drone.m4v" type="video/quicktime">
                             Your browser does not support the video tag.
                         </video>
                         <p class="item-description">Drone (Foundation Model)</p>
@@ -708,7 +949,6 @@ mathjax: true
                     <div class="item">
                         <video muted loop playsinline controls preload="metadata" poster="/img/tartanimu/human_overview.png">
                             <source src="/video/tartanimu/exp1_video_compare_human.m4v" type="video/mp4">
-                            <source src="/video/tartanimu/exp1_video_compare_human.m4v" type="video/quicktime">
                             Your browser does not support the video tag.
                         </video>
                         <p class="item-description">Human (Foundation Model)</p>
@@ -718,16 +958,16 @@ mathjax: true
             <div class="drag-bar modern-preview-bar">
                 <div class="preview-container">
                     <div class="preview-wrapper">
-                        <img src="/img/tartanIMU/car_overview.png" alt="Preview 1" class="preview-image active" data-index="0">
+                        <img src="/img/tartanimu/car_overview.png" alt="Preview 1" class="preview-image active" data-index="0">
                     </div>
                     <div class="preview-wrapper">
-                        <img src="/img/tartanIMU/dog_overview.png" alt="Preview 2" class="preview-image" data-index="1">
+                        <img src="/img/tartanimu/dog_overview.png" alt="Preview 2" class="preview-image" data-index="1">
                     </div>
                     <div class="preview-wrapper">
-                        <img src="/img/tartanIMU/drone_overview.png" alt="Preview 3" class="preview-image" data-index="2">
+                        <img src="/img/tartanimu/drone_overview.png" alt="Preview 3" class="preview-image" data-index="2">
                     </div>
                     <div class="preview-wrapper">
-                        <img src="/img/tartanIMU/human_overview.png" alt="Preview 4" class="preview-image" data-index="3">
+                        <img src="/img/tartanimu/human_overview.png" alt="Preview 4" class="preview-image" data-index="3">
                     </div>
                 </div>
                 <div class="drag-handle modern-drag-handle"></div>
@@ -850,7 +1090,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="trajectory-grid">
                 <div class="trajectory-card" data-trajectory="quadruped_outdoor_1">
                     <div class="trajectory-preview">
-                        <img src="img/tartanimu/outdoor_spot.PNG" alt="Outdoor Navigation" class="trajectory-image">
+                        <img src="/img/tartanimu/outdoor_spot.png" alt="Outdoor Navigation" class="trajectory-image">
                         <div class="trajectory-overlay">
                             <div class="trajectory-info">
                                 <h4>Outdoor Navigation</h4>
@@ -871,7 +1111,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <div class="trajectory-card" data-trajectory="quadruped_stairs">
                     <div class="trajectory-preview">
-                        <img src="/img/tartanimu/spot_stairs_preview.PNG" alt="Stair Climbing" class="trajectory-image">
+                        <img src="/img/tartanimu/spot_stairs_preview.png" alt="Stair Climbing" class="trajectory-image">
                         <div class="trajectory-overlay">
                             <div class="trajectory-info">
                                 <h4>Stair Climbing</h4>
@@ -919,7 +1159,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="trajectory-grid">
                 <div class="trajectory-card" data-trajectory="drone_indoor_3d">
                     <div class="trajectory-preview">
-                        <img src="/img/tartanimu/indoor_flight.PNG" alt="3D Maneuvers" class="trajectory-image">
+                        <img src="/img/tartanimu/indoor_flight.png" alt="3D Maneuvers" class="trajectory-image">
                         <div class="trajectory-overlay">
                             <div class="trajectory-info">
                                 <h4>3D Maneuvers</h4>
@@ -961,7 +1201,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <div class="trajectory-card" data-trajectory="drone_precision_hover">
                     <div class="trajectory-preview">
-                        <img src="img/tartanimu/precise_hovering.PNG" alt="Precision Hover" class="trajectory-image">
+                        <img src="img/tartanimu/precise_hovering.png" alt="Precision Hover" class="trajectory-image">
                         <div class="trajectory-overlay">
                             <div class="trajectory-info">
                                 <h4>Precision Hover</h4>
