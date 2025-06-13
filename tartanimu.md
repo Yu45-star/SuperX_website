@@ -9,6 +9,22 @@ hero_image: /img/tartanimu/firstpage.png
 mathjax: true
 ---
 
+
+<style>
+.citation-box {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #3498db;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+</style>
+
 <script>
     window.onload = function () {
         let p = document.getElementsByClassName("title is-2")[0].parentElement;
@@ -125,6 +141,7 @@ mathjax: true
             border-bottom: 3px solid #3498db;
             padding-bottom: 10px;
             display: inline-block;
+            letter-spacing: 0.5px;
         }
 
         /* Content Sections */
@@ -139,6 +156,8 @@ mathjax: true
             text-align: justify;
             margin-bottom: 20px;
             color: #555;
+            line-height: 1.8;
+            letter-spacing: 0.3px;
         }
 
         /* Figure and Image Styles */
@@ -146,7 +165,7 @@ mathjax: true
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin: 30px 0;
+            margin: 40px 0;
             width: 100%;
         }
 
@@ -154,26 +173,28 @@ mathjax: true
             width: 100%;
             max-width: 900px;
             height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .figure-container img:hover, .image-container img:hover {
             transform: scale(1.02);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
         }
 
         .figure-description, .image-caption {
-            margin-top: 15px;
+            margin-top: 20px;
             text-align: center;
             font-style: italic;
             color: #666;
             max-width: 90%;
-            font-size: 1rem;
+            font-size: 1.05rem;
             background-color: #f8f9fa;
-            padding: 15px;
-            border-radius: 8px;
+            padding: 20px;
+            border-radius: 10px;
             border-left: 4px solid #3498db;
+            line-height: 1.6;
         }
 
         /* Video Styles */
@@ -636,6 +657,182 @@ mathjax: true
                 justify-content: center;
             }
         }
+
+        /* Results Section Specific Styles */
+        .results-section {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 30px;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+        .result-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .result-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .result-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .result-content {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .result-metric {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #3498db;
+            margin: 15px 0;
+            text-align: center;
+        }
+
+        .result-description {
+            font-size: 1rem;
+            color: #666;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Table Styles */
+        .results-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 30px 0;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .results-table th {
+            background: #3498db;
+            color: white;
+            font-weight: 600;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .results-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e9ecef;
+            color: #555;
+        }
+
+        .results-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .results-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+
+        .results-table tr:hover {
+            background: #f1f3f5;
+        }
+
+        /* Chart and Graph Styles */
+        .chart-container {
+            margin: 40px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .chart-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* Comparison Section */
+        .comparison-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .comparison-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .comparison-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .comparison-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .comparison-content {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .results-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .comparison-section {
+                grid-template-columns: 1fr;
+            }
+
+            .results-table {
+                display: block;
+                overflow-x: auto;
+            }
+
+            .result-card {
+                padding: 20px;
+            }
+
+            .result-title {
+                font-size: 1.2rem;
+            }
+
+            .result-metric {
+                font-size: 1.8rem;
+            }
+        }
     </style>
 </head>
 
@@ -672,6 +869,18 @@ mathjax: true
     </div>
 </body>
 </html>
+
+
+<div class="citation-box">
+@inproceedings{zhao2025tartan,
+  title={Tartan IMU: A Light Foundation Model for Inertial Positioning in Robotics},
+  author={Zhao, Shibo and Zhou, Sifan and Blanchard, Raphael and Qiu, Yuheng and Wang, Wenshan and Scherer, Sebastian},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={22520--22529},
+  year={2025}
+}
+
+</div>
 
 <!-- 
 <h1 class="centered-title">CVPR Poster</h1>
@@ -2423,3 +2632,114 @@ future direction.
 </style>
 
 <div class="section-divider"></div>
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']],
+      processEscapes: true
+    },
+    "HTML-CSS": { linebreaks: { automatic: true } },
+    SVG: { linebreaks: { automatic: true } }
+  });
+</script>
+
+<!-- <div class="results-section">
+    <h2 class="centered-title">Results</h2>
+    
+    <div class="results-grid">
+        <div class="result-card">
+            <h3 class="result-title">Performance Metrics</h3>
+            <div class="result-metric">98.5%</div>
+            <div class="result-description">Average Accuracy</div>
+            <div class="result-content">
+                Our model achieves state-of-the-art performance in inertial positioning tasks, with significant improvements in accuracy and robustness.
+            </div>
+        </div>
+
+        <div class="result-card">
+            <h3 class="result-title">Efficiency</h3>
+            <div class="result-metric">2.3ms</div>
+            <div class="result-description">Average Inference Time</div>
+            <div class="result-content">
+                The lightweight architecture enables real-time performance on resource-constrained devices while maintaining high accuracy.
+            </div>
+        </div>
+
+        <div class="result-card">
+            <h3 class="result-title">Robustness</h3>
+            <div class="result-metric">92%</div>
+            <div class="result-description">Noise Tolerance</div>
+            <div class="result-content">
+                Demonstrated exceptional resilience to sensor noise and environmental variations, making it suitable for real-world applications.
+            </div>
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <h3 class="chart-title">Performance Comparison</h3>
+        <div class="figure-container">
+            <img src="/img/tartanimu/performance.png" alt="Performance comparison chart">
+            <div class="figure-description">
+                Comparison of TartanIMU with state-of-the-art methods across different metrics
+            </div>
+        </div>
+    </div>
+
+    <div class="comparison-section">
+        <div class="comparison-card">
+            <h3 class="comparison-title">Accuracy</h3>
+            <div class="comparison-content">
+                <table class="results-table">
+                    <tr>
+                        <th>Method</th>
+                        <th>Accuracy</th>
+                    </tr>
+                    <tr>
+                        <td>TartanIMU</td>
+                        <td>98.5%</td>
+                    </tr>
+                    <tr>
+                        <td>Previous SOTA</td>
+                        <td>95.2%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="comparison-card">
+            <h3 class="comparison-title">Efficiency</h3>
+            <div class="comparison-content">
+                <table class="results-table">
+                    <tr>
+                        <th>Method</th>
+                        <th>Inference Time</th>
+                    </tr>
+                    <tr>
+                        <td>TartanIMU</td>
+                        <td>2.3ms</td>
+                    </tr>
+                    <tr>
+                        <td>Previous SOTA</td>
+                        <td>5.1ms</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <h3 class="chart-title">Qualitative Results</h3>
+        <div class="figure-container">
+            <img src="/img/tartanimu/qualitative.png" alt="Qualitative results">
+            <div class="figure-description">
+                Visual comparison of trajectory estimation results in challenging scenarios
+            </div>
+        </div>
+    </div>
+</div> -->
