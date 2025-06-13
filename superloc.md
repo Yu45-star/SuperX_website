@@ -371,21 +371,21 @@ hero_image: img/superloc/superloc_title.gif
             <div class="carousel-container">
                 <div id="results-carousel" class="carousel">
                     <div class="item">
-                        <video muted loop playsinline controls>
+                        <video muted loop playsinline controls preload="metadata" poster="img/superloc/preview3.png">
                             <source src="video/superloc/website_intro3.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <p class="item-description">Predict Alignment Risks✅</p>
                     </div>
                     <div class="item">
-                        <video muted loop playsinline controls>
+                        <video muted loop playsinline controls preload="metadata" poster="img/superloc/preview1.png">
                             <source src="video/superloc/website_intro1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <p class="item-description">Real World Degraded Environment❓</p>
                     </div>
                     <div class="item">
-                        <video muted loop playsinline controls>
+                        <video muted loop playsinline controls preload="metadata" poster="img/superloc/preview2.png">
                             <source src="video/superloc/website_intro2.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
@@ -540,7 +540,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
         <p>where diagonal element of \(\Sigma \in\left\{\operatorname{diag}(\boldsymbol{v}): \boldsymbol{v} \in \mathbb{R}_{\geq 0}^n\right\}\) are eigenvalues and \(\boldsymbol{V} \in \mathbb{R}^{6 \times 6}\) are the eigenvectors in matrix form. The idea of degeneracy detection is to observe the null space of \(\mathbf{H}\). By examining \(\Sigma\), one can identify the <b>least-constrained pose elements of \(\mathbf{x}\)</b> by looking at the lowest eigenvalues.</p>
         <h3>Degeneracy detection using ICP hessian is difficult to generalize</h3>
-        <p>The effectiveness of ICP hessian analysis for degeneracy detection varies significantly across different LiDAR sensors and environments. Nubert et al. <sup>[6]</sup> demonstrated this variability through an experiment comparing the lowest eigenvalues from two LiDAR sensors: Velodyne and Ouster, as shown in Fig. 1. Additional validation using the <a href="#dataset">SuperLoc dataset (Cave03 and Floor01)</a> revealed similar variations across different environments, as shown in Fig. 2. These large differences in lowest eigenvalues indicate that eigenvalue-based parameters cannot be over-applied across different sensor modalities or environments, limiting the Hessian’s generalizability. This makes constrained ICP using eigenvalue-based appraoch <sup>[5][6]</sup> less durable.</p>
+        <p>The effectiveness of ICP hessian analysis for degeneracy detection varies significantly across different LiDAR sensors and environments. Nubert et al. <sup>[6]</sup> demonstrated this variability through an experiment comparing the lowest eigenvalues from two LiDAR sensors: Velodyne and Ouster, as shown in Fig. 1. Additional validation using the <a href="#dataset">SuperLoc dataset (Cave03 and Floor01)</a> revealed similar variations across different environments, as shown in Fig. 2. These large differences in lowest eigenvalues indicate that eigenvalue-based parameters cannot be over-applied across different sensor modalities or environments, limiting the Hessian's generalizability. This makes constrained ICP using eigenvalue-based appraoch <sup>[5][6]</sup> less durable.</p>
         <div class="image-container">
             <img src="img/superloc/eigenvalue_sensor.png" alt="Eigenvalue comparison">
             <p class="image-caption">Figure 1: Comparison between different LiDAR sensors (Nubert et al.)</p>

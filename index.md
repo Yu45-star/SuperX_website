@@ -6,8 +6,8 @@ show_sidebar: false
 hide_footer: false
 hero_height: is-large
 hero_image: img/super_odometry/superodom_video.gif
-hero_link: /team
-hero_link_text: See Our Team
+hero_link: https://github.com/superxslam/SuperOdom
+hero_link_text: See Our Code
 ---
 
 # About Super Odometry
