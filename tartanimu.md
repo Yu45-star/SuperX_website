@@ -33,6 +33,7 @@ mathjax: true
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>TartanIMU</title>
     <style>
         /* Base Styles */
@@ -496,7 +497,7 @@ mathjax: true
             width: 80%;
             height: 2px;
             background: linear-gradient(to right, transparent, #3498db, transparent);
-            margin: 40px auto;
+            margin: 10px auto;
         }
 
         .highlight-box {
@@ -520,17 +521,17 @@ mathjax: true
             <sup>1</sup>Carnegie Mellon University
             <sup>*</sup>Corresponding Author
         </p>
-        <div class="highlight-box">
+        <!-- <div class="highlight-box">
         <p class="affiliation">
                 <b>Code and Dataset will be released soon</b>
         </p>
-        </div>
+        </div> -->
         <center>
             <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Zhao_Tartan_IMU_A_Light_Foundation_Model_for_Inertial_Positioning_in_CVPR_2025_paper.pdf" class="button is-info">
                 <img src="/img/logos/arxiv.png" class="small-logo">Paper
             </a>
             <a href="https://github.com/superxslam/SuperOdom" class="button is-info">
-                <i class="fab fa-github" style="font-size:20px; margin-right: 8px;"></i>Code
+                <i class="fab fa-github" style="font-size:20px; margin-right: 8px;"></i>Code (Coming soon...)
             </a>
             <a href="https://huggingface.co/datasets/raphael-blanchard/TartanIMU/tree/main" class="button is-info">
                 <img src="/img/logos/huggingface-logo.png" class="logo">Dataset & Checkpoints
@@ -542,10 +543,25 @@ mathjax: true
 
 <div class="section-divider"></div>
 
-<h1 class="centered-title">Overview Video</h1>
+<!-- <h1 class="centered-title">Overview Video</h1>
 <div class="video-container">
     <iframe src="https://www.youtube.com/embed/HqoDL2xiaZA" title="TartanIMU Overview Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div> -->
+
+<h1 class="centered-title">CVPR Poster</h1>
+<div style="display: flex; justify-content: center;">
+  <div style="position: relative; width: 70%; padding-top: 35%; overflow: hidden;">
+    <iframe
+      src="/img/tartanIMU/CVPR%20Poster.pdf"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+      allowfullscreen>
+    </iframe>
+  </div>
 </div>
+
+
+
+
 
 <div class="section-divider"></div>
 
@@ -799,7 +815,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 <div class="section-divider"></div>
 
-<h1 id="interactive-demo" class="centered-title">Interactive Demo</h1>
+<h1 id="interactive-demo" class="centered-title">Interactive Demo (Coming Soon)</h1>
 
 <div class="demo-section">
     <p style="text-align: center; font-size: 1.1rem; margin-bottom: 30px;">
@@ -834,7 +850,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="trajectory-grid">
                 <div class="trajectory-card" data-trajectory="quadruped_outdoor_1">
                     <div class="trajectory-preview">
-                        <img src="img/superloc/preview3.png" alt="Outdoor Navigation" class="trajectory-image">
+                        <img src="img/tartanimu/outdoor_spot.PNG" alt="Outdoor Navigation" class="trajectory-image">
                         <div class="trajectory-overlay">
                             <div class="trajectory-info">
                                 <h4>Outdoor Navigation</h4>
@@ -855,7 +871,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <div class="trajectory-card" data-trajectory="quadruped_stairs">
                     <div class="trajectory-preview">
-                        <img src="img/superloc/preview1.png" alt="Stair Climbing" class="trajectory-image">
+                        <img src="/img/tartanimu/spot_stairs_preview.PNG" alt="Stair Climbing" class="trajectory-image">
                         <div class="trajectory-overlay">
                             <div class="trajectory-info">
                                 <h4>Stair Climbing</h4>
@@ -903,7 +919,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="trajectory-grid">
                 <div class="trajectory-card" data-trajectory="drone_indoor_3d">
                     <div class="trajectory-preview">
-                        <img src="img/superloc/preview1.png" alt="3D Maneuvers" class="trajectory-image">
+                        <img src="/img/tartanimu/indoor_flight.PNG" alt="3D Maneuvers" class="trajectory-image">
                         <div class="trajectory-overlay">
                             <div class="trajectory-info">
                                 <h4>3D Maneuvers</h4>
@@ -924,7 +940,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <div class="trajectory-card" data-trajectory="drone_outdoor_wind">
                     <div class="trajectory-preview">
-                        <img src="img/superloc/preview3.png" alt="Windy Conditions" class="trajectory-image">
+                        <img src="/img/superloc/preview3.png" alt="Windy Conditions" class="trajectory-image">
                         <div class="trajectory-overlay">
                             <div class="trajectory-info">
                                 <h4>Windy Conditions</h4>
@@ -945,7 +961,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <div class="trajectory-card" data-trajectory="drone_precision_hover">
                     <div class="trajectory-preview">
-                        <img src="img/superloc/preview2.png" alt="Precision Hover" class="trajectory-image">
+                        <img src="img/tartanimu/precise_hovering.PNG" alt="Precision Hover" class="trajectory-image">
                         <div class="trajectory-overlay">
                             <div class="trajectory-info">
                                 <h4>Precision Hover</h4>
@@ -1154,7 +1170,7 @@ document.addEventListener('DOMContentLoaded', function() {
 <style>
 .demo-section {
     max-width: 1200px;
-    margin: 0 auto 40px auto;
+    margin: 0 auto 20px auto;
     padding: 0 20px;
 }
 
@@ -1214,11 +1230,14 @@ document.addEventListener('DOMContentLoaded', function() {
 .trajectory-group {
     display: none;
     animation: fadeIn 0.3s ease;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .trajectory-group.active {
     display: block;
 }
+
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }
@@ -1238,7 +1257,7 @@ document.addEventListener('DOMContentLoaded', function() {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 25px;
-    margin-bottom: 40px;
+    margin-bottom: 0;
 }
 
 .trajectory-card {
@@ -1333,7 +1352,8 @@ document.addEventListener('DOMContentLoaded', function() {
 .demo-controls {
     background: linear-gradient(135deg, #f8f9fa, #e9ecef);
     border-radius: 12px;
-    padding: 30px;
+    padding: 15px 30px 30px 30px;  /* top right bottom left */
+    margin-top: 10px;              /* previously might have been larger or missing */
     margin-bottom: 30px;
     text-align: center;
 }
@@ -1701,7 +1721,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <td>45</td>
                 <td>28.5 hours</td>
                 <td>200 Hz</td>
-                <td><a href="https://huggingface.co/datasets/raphael-blanchard/TartanIMU/tree/main/quadruped" target="_blank">Hugging Face</a></td>
+                <td><a href="https://huggingface.co/datasets/raphael-blanchard/TartanIMU/tree/main/data/samples/dog/test" target="_blank">Hugging Face</a></td>
             </tr>
             <tr>
                 <td><strong>Drone</strong></td>
@@ -1710,7 +1730,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <td>38</td>
                 <td>22.7 hours</td>
                 <td>200 Hz</td>
-                <td><a href="https://huggingface.co/datasets/raphael-blanchard/TartanIMU/tree/main/drone" target="_blank">Hugging Face</a></td>
+                <td><a href="https://huggingface.co/datasets/raphael-blanchard/TartanIMU/tree/main/data/samples/drone/test" target="_blank">Hugging Face</a></td>
             </tr>
             <tr>
                 <td><strong>Human</strong></td>
@@ -1719,7 +1739,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <td>52</td>
                 <td>31.2 hours</td>
                 <td>200 Hz</td>
-                <td><a href="https://huggingface.co/datasets/raphael-blanchard/TartanIMU/tree/main/human" target="_blank">Hugging Face</a></td>
+                <td><a href="https://huggingface.co/datasets/raphael-blanchard/TartanIMU/tree/main/data/samples/human/test" target="_blank">Hugging Face</a></td>
             </tr>
             <tr>
                 <td><strong>UGV</strong></td>
@@ -1728,7 +1748,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <td>42</td>
                 <td>25.4 hours</td>
                 <td>200 Hz</td>
-                <td><a href="https://huggingface.co/datasets/raphael-blanchard/TartanIMU/tree/main/ugv" target="_blank">Hugging Face</a></td>
+                <td><a href="https://huggingface.co/datasets/raphael-blanchard/TartanIMU/tree/main/data/samples/car/testv" target="_blank">Hugging Face</a></td>
             </tr>
         </tbody>
         <tfoot>
