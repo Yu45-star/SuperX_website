@@ -870,17 +870,66 @@ mathjax: true
 </body>
 </html>
 
+<h1 id="results" class="centered-title">Results (Foundation Model Performance on Different Robot Platform)</h1>
 
-<div class="citation-box">
-@inproceedings{zhao2025tartan,
-  title={Tartan IMU: A Light Foundation Model for Inertial Positioning in Robotics},
-  author={Zhao, Shibo and Zhou, Sifan and Blanchard, Raphael and Qiu, Yuheng and Wang, Wenshan and Scherer, Sebastian},
-  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
-  pages={22520--22529},
-  year={2025}
-}
+<section class="hero is-light is-small">
+    <div class="hero-body">
+        <div class="container">
+            <div class="carousel-container">
+                <div id="results-carousel" class="carousel">
+                    <div class="item">
+                        <video muted loop playsinline controls preload="metadata" poster="/img/tartanimu/car_overview.png">
+                            <source src="video/tartanimu/exp1_video_compare_car.m4v" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="item-description">UGV (Foundation Model)</p>
+                    </div>
+                    <div class="item">
+                        <video muted loop playsinline controls preload="metadata" poster="/img/tartanimu/dog_overview.png">
+                            <source src="/video/tartanimu/exp1_video_compare_dog.m4v" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="item-description">Quadruped (Foundation Model)</p>
+                    </div>
+                    <div class="item">
+                        <video muted loop playsinline controls preload="metadata" poster="/img/tartanimu/drone_overview.png">
+                            <source src="/video/tartanimu/exp1_video_compare_drone.m4v" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="item-description">Drone (Foundation Model)</p>
+                    </div>
+                    <div class="item">
+                        <video muted loop playsinline controls preload="metadata" poster="/img/tartanimu/human_overview.png">
+                            <source src="/video/tartanimu/exp1_video_compare_human.m4v" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p class="item-description">Human (Foundation Model)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="drag-bar modern-preview-bar">
+                <div class="preview-container">
+                    <div class="preview-wrapper">
+                        <img src="/img/tartanimu/car_overview.png" alt="Preview 1" class="preview-image active" data-index="0">
+                    </div>
+                    <div class="preview-wrapper">
+                        <img src="/img/tartanimu/dog_overview.png" alt="Preview 2" class="preview-image" data-index="1">
+                    </div>
+                    <div class="preview-wrapper">
+                        <img src="/img/tartanimu/drone_overview.png" alt="Preview 3" class="preview-image" data-index="2">
+                    </div>
+                    <div class="preview-wrapper">
+                        <img src="/img/tartanimu/human_overview.png" alt="Preview 4" class="preview-image" data-index="3">
+                    </div>
+                </div>
+                <div class="drag-handle modern-drag-handle"></div>
+            </div>
+        </div>
+    </div>
+</section>
 
-</div>
+
+
 
 <!-- 
 <h1 class="centered-title">CVPR Poster</h1>
@@ -1127,63 +1176,6 @@ mathjax: true
 
 <div class="section-divider"></div>
 
-<h1 id="results" class="centered-title">Results (Foundation Model Performance on Different Robot Platform)</h1>
-
-<section class="hero is-light is-small">
-    <div class="hero-body">
-        <div class="container">
-            <div class="carousel-container">
-                <div id="results-carousel" class="carousel">
-                    <div class="item">
-                        <video muted loop playsinline controls preload="metadata" poster="/img/tartanimu/car_overview.png">
-                            <source src="video/tartanimu/exp1_video_compare_car.m4v" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <p class="item-description">UGV (Foundation Model)</p>
-                    </div>
-                    <div class="item">
-                        <video muted loop playsinline controls preload="metadata" poster="/img/tartanimu/dog_overview.png">
-                            <source src="/video/tartanimu/exp1_video_compare_dog.m4v" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <p class="item-description">Quadruped (Foundation Model)</p>
-                    </div>
-                    <div class="item">
-                        <video muted loop playsinline controls preload="metadata" poster="/img/tartanimu/drone_overview.png">
-                            <source src="/video/tartanimu/exp1_video_compare_drone.m4v" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <p class="item-description">Drone (Foundation Model)</p>
-                    </div>
-                    <div class="item">
-                        <video muted loop playsinline controls preload="metadata" poster="/img/tartanimu/human_overview.png">
-                            <source src="/video/tartanimu/exp1_video_compare_human.m4v" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <p class="item-description">Human (Foundation Model)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="drag-bar modern-preview-bar">
-                <div class="preview-container">
-                    <div class="preview-wrapper">
-                        <img src="/img/tartanimu/car_overview.png" alt="Preview 1" class="preview-image active" data-index="0">
-                    </div>
-                    <div class="preview-wrapper">
-                        <img src="/img/tartanimu/dog_overview.png" alt="Preview 2" class="preview-image" data-index="1">
-                    </div>
-                    <div class="preview-wrapper">
-                        <img src="/img/tartanimu/drone_overview.png" alt="Preview 3" class="preview-image" data-index="2">
-                    </div>
-                    <div class="preview-wrapper">
-                        <img src="/img/tartanimu/human_overview.png" alt="Preview 4" class="preview-image" data-index="3">
-                    </div>
-                </div>
-                <div class="drag-handle modern-drag-handle"></div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <script>
 // Video Carousel Functionality
@@ -2648,6 +2640,19 @@ future direction.
     SVG: { linebreaks: { automatic: true } }
   });
 </script>
+
+<h1 id="Citations" class="centered-title">Citations</h1>
+
+<div class="citation-box">
+@inproceedings{zhao2025tartan,
+  title={Tartan IMU: A Light Foundation Model for Inertial Positioning in Robotics},
+  author={Zhao, Shibo and Zhou, Sifan and Blanchard, Raphael and Qiu, Yuheng and Wang, Wenshan and Scherer, Sebastian},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={22520--22529},
+  year={2025}
+}
+
+</div>
 
 <!-- <div class="results-section">
     <h2 class="centered-title">Results</h2>
