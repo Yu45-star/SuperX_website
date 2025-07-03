@@ -107,14 +107,13 @@ Time remaining:
 <br>
 
 
-## SubT-MRS Dataset 
 
 
 
 
 <img src="/img/datasets/palette.png" style="display: block; margin-left: auto; margin-right: auto; width: 60%;" />
 
-
+## SubT-MRS Dataset 
 
 The SubT-MRS Dataset is an exceptional real-world collection of challenging datasets obtained from Subterranean Environments, encompassing caves, urban areas, and tunnels. Its primary focus lies in testing robust SLAM capabilities and is designed as Multi-Robot Datasets, featuring UGV, UAV, and Spot robots, each demonstrating various motions. The datasets are distinguished as Multi-Spectral, integrating Visual, Lidar, Thermal, and inertial measurements, effectively enabling exploration under demanding conditions such as darkness, smoke, dust, and geometrically degraded environments.Key features of our dataset:
 
@@ -147,7 +146,63 @@ Our dataset includes hardware time-synchronized data from 4 RGB cameras, 1 LiDAR
    <b> 4. Challenging Scenes:</b>
     We include challenging scenes with difficult lighting conditions, day-night alternating, low illumination, weather effects (rain, snow, wind and fog) and seasonal changes.Please refer to the TartanAir Dataset and the paper for more information. 
 
+## Download
 
+<span style="font-size:1.3em;">ROS bag format:&emsp;**[Google](https://drive.google.com/drive/folders/1hHCsnc-gANmK6Oox-Im3hqRwsGGaJIuJ)** Baidu</span>  
+
+<span style="font-size:1.3em;">Folder format:&ensp;&ensp;&ensp;&nbsp;&nbsp;**[Google](https://drive.google.com/drive/folders/1zVG63JVmRCWSpTCe0F2iOb-E00NaS1JK)** Baidu</span>
+
+<span style="font-size:1.3em;">Ground Truth:&emsp;**[Google](https://drive.google.com/drive/folders/1KyM_OO14G6z4NeDZdEfa7hntLLhfdAPp?usp=sharing)** Baidu</span> 
+
+
+| Name | Source  | Robot |Sensor | Description | Video | Calibration (Extrinsics) |
+|---|-----------|---------|-----------|-----------|------------|-----------|-----------|---------------|--------------|
+| Final_Challenge_UGV1 |  SubT-MRS       |     UGV1      |    LiDAR,IMU       | Geometry Degraded          |[link](https://youtu.be/7lxR0XIwdcM)| [Google](https://drive.google.com/file/d/1jIxqeVk4i3Kj4OD-M8v3C4Bwz9m3d10d/view?usp=drive_link) Baidu |
+| Final_Challenge_UGV2 |  SubT-MRS       |     UGV2      |    LiDAR,IMU       | Geometry Degraded          |[link](https://youtu.be/7lxR0XIwdcM)| [Google](https://drive.google.com/file/d/1aeEVNv6lmpOsVodTfsrDyQwJcCsdHqcb/view?usp=drive_link) Baidu |
+| Final_Challenge_UGV3 |  SubT-MRS       |     UGV3      |    LiDAR,IMU       | Geometry Degraded          |[link](https://youtu.be/7lxR0XIwdcM)| [Google](https://drive.google.com/file/d/1J9MvUTH3-qqNHSRo93m6eluty7o7v1uy/view?usp=drive_link) Baidu |
+| Urban_Challenge_UGV1 |  SubT-MRS       |     UGV1      |    LiDAR,IMU       | Geometry Degraded          |[link](https://youtu.be/UGPbnyaStjM)| [Google](https://drive.google.com/file/d/1UHw3s1ab073opa8-0xHzIe-ouULT90pH/view?usp=sharing) Baidu |
+| Urban_Challenge_UGV2 |  SubT-MRS       |     UGV2      |    LiDAR,IMU       | Geometry Degraded          |[link](https://youtu.be/UGPbnyaStjM)| [Google](https://drive.google.com/file/d/1rNPndrHyPnbsLzG1BksghtwS2AWSsh4_/view?usp=sharing) Baidu |
+| Laurel_Cavern        |  SubT-MRS       |     Handheld  |    LiDAR,IMU       | Underground Cave           |[link](https://youtu.be/QYLY2Zc3j1w)| [Google](https://drive.google.com/file/d/1l7UYUVfygY3j1yHzsuovpdHnIClTfKkP/view?usp=sharing) Baidu |
+| Lidar_factory       |  TartanAir       |  Virtual Sensors | LiDAR,IMU       | Snow                       |                                    | [Google](https://drive.google.com/file/d/1TDGY-jw1NIexqtm6fh8pPjAkFv6V3VoR/view?usp=sharing) Baidu |
+| Lidar_ocean         |  TartanAir       |  Virtual Sensors | LiDAR,IMU       | Dynamic Objects            |                                    | [Google](https://drive.google.com/file/d/1TDGY-jw1NIexqtm6fh8pPjAkFv6V3VoR/view?usp=sharing) Baidu |
+| Lidar_sewerage      |  TartanAir       |  Virtual Sensors | LiDAR,IMU       | Geometry Degraded          |                                    | [Google](https://drive.google.com/file/d/)
+
+### Extra Dataset from [Sensor Fusion Challenge](/iccv23_challenge_Mul)
+
+<span style="font-size:1.3em;">ROS bag format:&emsp;**[Google](https://drive.google.com/drive/folders/1bV5oCLrpVoc6xKcIduUcco47nG0jPH6i)** Baidu</span>  
+
+<span style="font-size:1.3em;">Folder format:&ensp;&ensp;&ensp;&nbsp;&nbsp;**[Google](https://drive.google.com/drive/folders/1E4EFVY-Bnef7sSBprnfL5Z49HAc89dLr)** Baidu</span>
+
+<span style="font-size:1.3em;">Ground Truth:&ensp;&ensp;&ensp;&nbsp;&nbsp;**[Google](https://drive.google.com/drive/folders/1bSGDe1FFQYEjs20P8L15pTx7T0HCn2L0)** Baidu</span>
+
+
+| Name | Source  | Robot |Sensor | Description |  Video | Calibration (Extrinsics) | Calibration (Intrinsics) |
+|---|-----------|---------|-----------|-----------|------------|-----------|-------------|-----------|---------------|--------------|
+|Multi_Floor|SubT-MRS|SP1|Lidar,RGB,IMU|Multi Floor|[link](https://youtu.be/QcHjVLlsyXE)| [Google](https://drive.google.com/file/d/1BV87D60W35UGzIaHjKD64c_J1G0U70jf/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/1uH4wFmLeQNrIGlsUsO--PQuyEIOSOGvR/view?usp=drive_link) Baidu |
+|Long_Corridor|SubT-MRS|RC2|Lidar,RGB,IMU|Multi Floor|[link](https://youtu.be/prmBxGRGwNY)| [Google](https://drive.google.com/file/d/1bB3jfEJeTf_XoLUHKOaxCNF_MCkiQTol/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/10rv5dg5un7kUveTPS3XBx8IuIYGg9r2h/view?usp=drive_link) Baidu |
+|BlockLiDAR|SubT-MRS|SP1|Lidar,RGB,IMU|Block Lidar|[link](https://youtu.be/2r4Z1XKTJHs)| [Google](https://drive.google.com/file/d/1NscQVVsQc_CN-16O_VLpLQnmTWgBmf93/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/1zCqwibpnmJ6I9lv29OUEnjyK2SxN4TbV/view?usp=drive_link) Baidu |
+|BlockVisual|SubT-MRS|SP1|RGB,IMU,Thermal|Block Visual/Thermal|[link](https://youtu.be/_vl2ClHvxPE)| [Google](https://drive.google.com/file/d/136vuMpzb7OrO_6f8w2-p6g1xyXn09u--/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/1f8DjHgZHH9-fCVUq1Q7kra5Tr5OtNBe-/view?usp=drive_link) Baidu |
+|SmokeRoom|SubT-MRS|RC7|RGB,Thermal,IMU|Visual Degraded|[link](https://youtu.be/Ti2eAbDRMNk)| [Google](https://drive.google.com/file/d/1HjWlRVQQvgrFGlgRxcczRt92Xy_P-5Ij/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/1Q0JiqiIgGZ-7DZKZDNJ68F7rpC2rrLtT/view?usp=drive_link) Baidu |
+|OutdoorNight|SubT-MRS|SP1|RGB,Thermal,IMU|Visual Degraded|[link](https://youtu.be/p3Gmdem0LoU)|  [Google](https://drive.google.com/file/d/1Zkb4FybZBx2skEXxYnffL4jNneTmd8pQ/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/1hbIyPUJ24YSyX1vISjkMUeqX5K0rrSkU/view?usp=drive_link) Baidu |
+|FlashLight|SubT-MRS|SP1|RGB,Thermal,IMU|Visual Degraded|[link](https://youtu.be/RybUmK27fyY)| [Google](https://drive.google.com/file/d/10YJQ3FMRw95F3_yhOsX2bbuMuvQbtnVV/view?usp=drive_link) Baidu | [Google](https://drive.google.com/file/d/13iTBn_po_GWxt3X8kNWVGZ2wwQ38Eou0/view?usp=drive_link) Baidu |
+
+### SuperLoc
+
+| Name | Source    | Robot     |Sensor     |  Rosbag | Calibration (Extrinsics) | Calibration (Intrinsics) | GT Map | GT Traj. |
+|------|-----------|-----------|-----------|-----------|-------------|-----------|-------------|-----------|---------------|--------------|--------------|
+|Cave01    |SuperLoc|Handheld|RGB,LiDAR,IMU|[link](https://drive.google.com/file/d/1cyHbmxmJQGuK5UCm_f7SXomr8Gd6GEww/view?usp=sharing)| [Google](https://drive.google.com/file/d/1TzIvJuJ3ulYSOdrXRy9wRm1E2Y5AE7g1/view?usp=sharing) Baidu | [Google](https://drive.google.com/file/d/1XfWfpjMqfPHUO8JNy1u9Ysky6vvTpn8_/view?usp=sharing) Baidu | [link](https://drive.google.com/file/d/1JYSVgunLJj6Fj-MsDoNIDHRDx51YWsQP/view?usp=sharing) | [link](https://drive.google.com/file/d/17JiwUXJ6xZMkL7GSNQg_kV-ZJfKczxak/view?usp=sharing)
+|Cave02    |SuperLoc|Handheld|RGB,LiDAR,IMU|[link](https://drive.google.com/file/d/1HwUYboHbCh4_GfyvZYQn25KmA12yiuMR/view?usp=sharing)| [Google](https://drive.google.com/file/d/1TzIvJuJ3ulYSOdrXRy9wRm1E2Y5AE7g1/view?usp=sharing) Baidu | [Google](https://drive.google.com/file/d/1XfWfpjMqfPHUO8JNy1u9Ysky6vvTpn8_/view?usp=sharing) Baidu | [link](https://drive.google.com/file/d/1JYSVgunLJj6Fj-MsDoNIDHRDx51YWsQP/view?usp=sharing) | [link](https://drive.google.com/file/d/1_7D70MVcUbaJqlzN_xlDkguF1qiyZCqF/view?usp=sharing)
+|Cave03    |SubT-MRS|Handheld|RGB,LiDAR,IMU|[link](https://drive.google.com/file/d/1cO5fStkj1oKpQojfrF8sji-Pbu8LqxPF/view?usp=drive_link)| [Google](https://drive.google.com/file/d/1TzIvJuJ3ulYSOdrXRy9wRm1E2Y5AE7g1/view?usp=sharing) Baidu | [Google](https://drive.google.com/file/d/1XfWfpjMqfPHUO8JNy1u9Ysky6vvTpn8_/view?usp=sharing) Baidu | [link](https://drive.google.com/file/d/1JYSVgunLJj6Fj-MsDoNIDHRDx51YWsQP/view?usp=sharing) | [link](https://drive.google.com/file/d/1Rgm5JC4Nq2mm8s6tafY5w-LvxLrt1oPG/view?usp=sharing)
+|Cave04    |SuperLoc|Handheld|RGB,LiDAR,IMU|[link](https://drive.google.com/file/d/19DXx6mspWBXiEqqZOa34b2bHz7cc1jTN/view?usp=sharing)| [Google](https://drive.google.com/file/d/1TzIvJuJ3ulYSOdrXRy9wRm1E2Y5AE7g1/view?usp=sharing) Baidu | [Google](https://drive.google.com/file/d/1XfWfpjMqfPHUO8JNy1u9Ysky6vvTpn8_/view?usp=sharing) Baidu | [link](https://drive.google.com/file/d/1JYSVgunLJj6Fj-MsDoNIDHRDx51YWsQP/view?usp=sharing) | [link](https://drive.google.com/file/d/11EnNKVYfHJV3P9i0MUrbV4tYqC5z-PSM/view?usp=sharing)
+|Corridor01  |SubT-MRS|RC2     |RGB,LiDAR IMU|[link](https://drive.google.com/file/d/1aIIqPiE10nX3IhidpxKhc4Psq-AMER1X/view?usp=drive_link)| [Google](https://drive.google.com/file/d/13WmYOrqbT6VNkIGL13cRuLiENeanI6oY/view?usp=sharing) Baidu | [Google](https://drive.google.com/file/d/1guy4Sa1jdfOdxmqBIGFiXX-X2qvXQLGa/view?usp=sharing) Baidu |[link](https://drive.google.com/file/d/1EH4NzINNLkHrneIxstrzkY9XTZ1JP5bf/view?usp=sharing) | [link](https://drive.google.com/file/d/1QbQamSktPAzJkf0GduAPTqQlxuxM0DBK/view?usp=sharing)
+|Corridor02  |SuperLoc|RC1     |RGB,LiDAR IMU|[link](https://drive.google.com/file/d/1fbQIjza6zCVZ719VvXfNhAONDZflqGnf/view?usp=sharing)| [Google](https://drive.google.com/file/d/1FzepVzxan_9GjS0Rg_3f1LIjjwm2VZrR/view?usp=sharing) Baidu | [Google](https://drive.google.com/file/d/1gCjmOVcwhm55Rwosel79FMxG_WzvnV8g/view?usp=sharing) Baidu | [link](https://drive.google.com/file/d/1d5vv4kfrTyntZw-82fGeTyih3H7DWxg5/view?usp=sharing) | [link](https://drive.google.com/file/d/1hb3IVu1OqyPZA61kBZG1raGTBcTv_h3H/view?usp=sharing)
+|Floor01    |SubT-MRS|SP1|RGB,LiDAR,IMU|[link](https://drive.google.com/file/d/13QQ8a-dEy56aHg8D0RNW0bfywWz6LKn9/view?usp=drive_link)| [Google](https://drive.google.com/file/d/1FAtf5IkUzNNrwxyqVAV6Vre5Pmvbp8Mj/view?usp=sharing) Baidu | [Google](https://drive.google.com/file/d/1uH4wFmLeQNrIGlsUsO--PQuyEIOSOGvR/view?usp=drive_link) Baidu | [link](https://drive.google.com/file/d/1F46g0wnJVSedTJubFD_Ne1IwgZAGYvsU/view?usp=sharing) | [link](https://drive.google.com/file/d/1T-p9TgDwD_9us7U94cT0guwPNTvx3KkI/view?usp=sharing)
+|Floor02 (bonus)    |SuperLoc|SP1|RGB,LiDAR,IMU|[link](https://drive.google.com/file/d/1RnlqpHVG1I-BD0T7pxNkKELAGy_Vp0oI/view?usp=sharing)| [Google](https://drive.google.com/file/d/1FAtf5IkUzNNrwxyqVAV6Vre5Pmvbp8Mj/view?usp=sharing) Baidu | [Google](https://drive.google.com/file/d/1uH4wFmLeQNrIGlsUsO--PQuyEIOSOGvR/view?usp=drive_link) Baidu | [link](https://drive.google.com/file/d/1F46g0wnJVSedTJubFD_Ne1IwgZAGYvsU/view?usp=sharing) | link
+
+We also provide initialization poses for each dataset to support localization modules that allows initial pose configuration. <b>You can find corresponding initial pose config for each dataset [here](https://drive.google.com/drive/folders/1WZsyEYyU-_8ps1CUqRq3YO7IaARMdGNm?usp=sharing)</b>. 
+
+<b>Ground truth trajecotry</b> follows [TUM](https://github.com/MichaelGrupp/evo/wiki/Formats) format, 
+<pre><code>timestamp x y z q_x q_y q_z q_w</code></pre>
 
 ## ICCV 2023 SLAM Challenge 
 
