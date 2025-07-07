@@ -204,6 +204,10 @@ We also provide initialization poses for each dataset to support localization mo
 <b>Ground truth trajecotry</b> follows [TUM](https://github.com/MichaelGrupp/evo/wiki/Formats) format, 
 <pre><code>timestamp x y z q_x q_y q_z q_w</code></pre>
 
+### Point Cloud Format Conversion
+
+To convert Velodyne packet message into `sensor_msgs/PointCloud2`, you can follow this [tutorial link](https://github.com/superxslam/ICCV2023_SLAM_Challenge?tab=readme-ov-file#instructions-for-running-velodyne-driver).
+
 ## ICCV 2023 SLAM Challenge 
 
 🚀 The Challenge is Live! 🚀
